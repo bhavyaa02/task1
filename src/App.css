@@ -1,0 +1,449 @@
+/* App.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d1eaff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  max-width: 100%;
+  margin: 20px auto;
+  background-color: #d1eaff;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header select {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+
+  border-radius: 4px;
+  background-color: #fff;
+  width: 80%;
+  transition: all 0.3s ease;
+}
+
+.header input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 2px solid #87ceeb;
+  border-radius: 4px;
+  background-color: #f0f8ff;
+  transition: all 0.3s ease;
+}
+
+.header select:focus,
+.header input:focus {
+  border-color: #1e90ff;
+  background-color: #e6f7ff;
+}
+.container button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #3e80f6;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #e0e0e0;
+}
+
+.comapnyOptions {
+  padding: 10px;
+  margin: 10px;
+}
+.academic-year {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.academic-year h2 {
+  display: inline;
+}
+.perfectMatch h2 {
+  margin: 5px auto;
+
+  font-size: 36px;
+
+  display: block;
+  font-weight: 700;
+}
+.buttonAdd {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfectMatch p {
+  font-size: 20px;
+
+  font-family: "Poppins";
+}
+.line {
+  height: 10px;
+  background-color: #3e80f6;
+  width: 68%;
+  margin-top: 10px;
+}
+.remark-list {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.remark {
+  margin: 20px 0;
+  border: 1px solid #e0e0e0;
+  padding: 20px 30px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  background-color: #fff;
+}
+
+.remark:last-child {
+  border-bottom: none;
+}
+
+.remark p {
+  margin: 10px 0;
+  font-size: 17px;
+}
+.remarkText {
+  font-size: 22px;
+}
+
+.remark textarea {
+  width: 100%;
+  height: 80px;
+  border: 2px solid #87ceeb;
+  border-radius: 4px;
+  background-color: #f0f8ff;
+  padding: 10px;
+  resize: vertical;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.remark select {
+  width: auto;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+/* .add-remark-modal {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+} */
+
+.add-remark-modal {
+  position: relative;
+}
+
+.add-remark-modal textarea,
+.add-remark-modal select,
+.add-remark-modal input,
+.add-remark-modal button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 2px solid #2e2a7f;
+  border-radius: 4px;
+  background-color: #f0f8ff;
+  transition: all 0.3s ease;
+}
+
+.add-remark-modal textarea {
+  width: 95.85%;
+  height: 100px;
+  resize: none;
+}
+
+.add-remark-modal textarea:focus,
+.add-remark-modal select:focus,
+.add-remark-modal input:focus {
+  border-color: #1e90ff;
+  background-color: #e6f7ff;
+}
+
+.add-remark-modal button {
+  background-color: #2e2a7f;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-remark-modal button:hover {
+  background-color: #87ceeb;
+}
+
+button {
+  background-color: #1e90ff;
+
+  border: none;
+  color: white;
+  padding: 8px 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #87ceeb;
+}
+
+.add-remark-modal .close-btn {
+  background: none;
+  position: absolute;
+  width: max-content;
+  margin: 0;
+  padding: 5px;
+  top: 2px;
+  right: 10px;
+  color: black;
+  font-size: larger;
+  transition: background-color 0.4s ease;
+}
+
+.add-remark-modal .close-btn:hover {
+  background-color: rgb(238, 238, 238);
+}
+.statusRemark {
+  margin: 0 30px 0 0;
+  display: inline-block;
+  width: 200px;
+}
+.buttonCover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.no-selection-message {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans";
+  font-weight: 900;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.no-selection-message h2 {
+  display: block;
+}
+
+/* //css for job posting */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+}
+
+.container-jobposting {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 40px;
+}
+
+.header-jobposting {
+  background: #2f25bb;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 50px;
+  margin-bottom: 30px;
+}
+
+.header-jobposting h1 {
+  font-size: 50px;
+  color: #fff;
+  letter-spacing: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
+  margin: 0;
+}
+
+.header-jobposting p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #adc4df;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
+  font-weight: 200;
+}
+
+.section-jobposting {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.h2,
+.section-jobposting h2 {
+  font-size: 28px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-family: "Lucida Sans Regular", "Lucida Grande";
+  letter-spacing: 2px;
+  line-height: 5px;
+}
+
+.hr {
+  margin-bottom: 25px;
+}
+.section-jobposting label {
+  font-size: 22px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.section-jobposting select {
+  display: flex;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.section-jobposting input,
+.section-jobposting textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: solid #6a9fdb;
+  border-radius: 5px;
+  border-width: 1px;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.section-jobposting button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #3b32b3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section-jobpsoting button:hover {
+  background-color: #3b32b3;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #147ace;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #6a9fdb;
+}
+.ConfirmedStatenment {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.ConfirmedStatenment select {
+  display: flex;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  width: 100%;
+}
+.ConfirmedStatenment h2 {
+  margin: 5px auto;
+  font-family: "Open Sans";
+  font-size: 36px;
+  color: #2e2a7f;
+  display: block;
+  font-weight: 900;
+}
+/* //css for header */
+
+
+.filter-display-add-buttons button {
+  background-color: #1e90ff;
+  border: none;
+  color: white;
+  padding: 6px 16px; /* Reduce the padding to make the buttons smaller */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px; /* Reduce the font size */
+  margin: 10px 5px; /* Add space between the buttons */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.filter-display-add-buttons button:hover {
+  background-color: #87ceeb;
+}
+
+/* Add space between the buttons */
+.button-group {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+}
+
