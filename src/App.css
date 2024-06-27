@@ -13,7 +13,7 @@ body {
   height: 100vh;
   max-width: 100%;
   margin: 20px auto;
-  background-color: #d1eaff;
+
   padding: 20px;
 }
 
@@ -21,9 +21,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
-
+.academic-year-dropdown {
+  width: 28%;
+}
+.companyname-dropdown {
+  width: 60%;
+}
 .header select {
   padding: 10px;
   font-size: 16px;
@@ -31,7 +35,7 @@ body {
 
   border-radius: 4px;
   background-color: #fff;
-  width: 80%;
+
   transition: all 0.3s ease;
 }
 
@@ -52,7 +56,7 @@ body {
 }
 .container button {
   padding: 8px 16px;
-  margin-right: 10px;
+
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -60,7 +64,14 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
+.clearFilterButton {
+  margin-left: 16px;
+}
+.clearFilterButtonCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .container button:hover {
   background-color: #e0e0e0;
 }
@@ -420,7 +431,6 @@ button[type="submit"]:hover {
 }
 /* //css for header */
 
-
 .filter-display-add-buttons button {
   background-color: #1e90ff;
   border: none;
@@ -446,4 +456,3 @@ button[type="submit"]:hover {
   display: flex;
   gap: 10px; /* Adjust the gap as needed */
 }
-
